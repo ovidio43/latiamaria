@@ -32,25 +32,17 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="main-banner">
         <div class="bg-banner">
-            <div class="container">
-
+            
+            <div class="container"><div class="bg"></div>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo" alt="La tia Maria"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"> </a>
             </div>            
         </div>
 
     </div>
     <nav id="main-nav">
       <div class="container">
-      <ul class="nav">
-        <li><a href="">Inicio</a> </li>
-        <li><a href="">La Tía María</a> </li>
-        <li><a href="">Videos de la Tía</a> </li>
-        <li><a href="">Tienda de la Tía</a> </li>
-        <li><a href="">Contacta a la Tía María</a> </li>
-      </ul>
-      <ul class="social_nav">
-        <li><a href="">Facebook</a> </li>
-        <li><a href="">Instagram</a> </li>
-        <li><a href="">Twitter</a> </li>
-      </ul>
+      <?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'items_wrap' => '<ul class="nav">%3$s</ul>')); ?> 
+      <?php wp_nav_menu(array('theme_location' => 'social', 'container' => false, 'items_wrap' => '<ul class="social_nav">%3$s</ul>')); ?> 
+
       </div>
     </nav>
