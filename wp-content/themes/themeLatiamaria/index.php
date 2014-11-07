@@ -16,6 +16,10 @@ get_header();
         <?php endwhile; ?>
     <?php endif; ?>                                     
       </div>
+      <div class="wrap-products">
+      <?php if ( is_active_sidebar( 'main_sidebar' ) ) : ?>
+          <?php dynamic_sidebar( 'main_sidebar' ); ?>
+      <?php endif; ?>
+      </div>
     </div>
-
 <?php get_footer();?>
