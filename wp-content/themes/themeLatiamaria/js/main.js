@@ -1,3 +1,3 @@
 $(document).ready(function() {
-	$('.bg').parallax("53%", 0.7);
+	//$('.bg').parallax("53%", 0.7);
 });

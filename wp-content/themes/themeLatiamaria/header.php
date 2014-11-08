@@ -33,7 +33,7 @@
     <div class="main-banner">
         <div class="bg-banner">
             
-            <div class="container"><div class="bg"></div>
+            <div class="container">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo" alt="La tia Maria"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"> </a>
             </div>            
         </div>
