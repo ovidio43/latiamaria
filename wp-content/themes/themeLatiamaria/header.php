@@ -41,6 +41,7 @@
     </div>
     <nav id="main-nav">
       <div class="container">
+        <i class="nav-mobile">nav</i>      
       <?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'items_wrap' => '<ul class="nav">%3$s</ul>')); ?> 
       <?php wp_nav_menu(array('theme_location' => 'social', 'container' => false, 'items_wrap' => '<ul class="social_nav">%3$s</ul>')); ?> 
 
