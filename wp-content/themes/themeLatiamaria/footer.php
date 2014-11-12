@@ -1,6 +1,6 @@
     <footer id="footer">
         <div class="container">
-            <p>&copy; 2014 La Tia Maria, LLC. All Rights Reserved.</p>
+            <p>&copy; 2014 La Tía María, LLC. All Rights Reserved.</p>
         </div>
     
     </footer>
