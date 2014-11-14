@@ -38,6 +38,7 @@
             
             <div class="container">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo" alt="La tia Maria"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"> </a>
+            <img class="mobileimg" src="<?php echo get_template_directory_uri(); ?>/img/mainbanner-mobile.jpg">
             </div>            
         </div>
 
