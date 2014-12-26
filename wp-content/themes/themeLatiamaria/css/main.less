@@ -19,7 +19,7 @@
 		display: block;
 		list-style: none;
 		padding: 0;
-		font-size: 18px;
+		font-size: 16px;
 		&.nav{
 			float: left;
 		}
@@ -67,7 +67,7 @@
 			display: inline-block;
 			a{
 				color: #fff;
-				padding: 13px 15px;
+				padding: 13px 14px;
 				&:hover{
 					background-color: #008ab7;
 				}
@@ -77,6 +77,9 @@
 			}
 		}
 	}
+}
+.mobileimg{
+	display:none;
 }
 #container{
 	width: 1000px;
@@ -339,6 +342,9 @@
 		img{
 			width: 215px;
 		}
+	}
+	.mobileimg{
+		display:block;width:100%;
 	}
 }
 @media (max-width:380px){

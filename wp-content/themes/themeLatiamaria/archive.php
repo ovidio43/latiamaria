@@ -2,7 +2,9 @@
 get_header();
 ?>
     <div class="container">
-    <?php query_posts('post_type=videos'); ?>
+
+<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+query_posts('post_type=videos&posts_per_page=10&caller_get_posts=1&paged='. $paged ); ?>     
     <?php if (have_posts()) : ?>
         <div class="wrap-video">
         <?php while (have_posts()) : the_post(); ?>
@@ -14,6 +16,7 @@ get_header();
                 </div>
             </div>
         <?php endwhile; ?>
+        <?php twentythirteen_paging_nav();?>
     <?php endif; ?>                                     
       </div>
     </div>
