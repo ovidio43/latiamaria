@@ -241,6 +241,8 @@
 				display: block;
 				clear: both;
 				margin: 0 auto;
+				width: 100%;
+				height: auto;
 			}
 		}
 	}
@@ -333,18 +335,23 @@
 		font-size: 25px;
 	}
 	.bg-banner{
-		background-image: url("../img/main-banner-mobile.jpg");
-		height: 185px;
+		
+		height: auto;
 		background-position: left center;
+		.container{
+			padding: 0;
+		}
 	}
 	.logo{
 		top: 20px;
+		display: none;
 		img{
 			width: 215px;
 		}
 	}
 	.mobileimg{
-		display:block;width:100%;
+		display:block;
+		width:100%;
 	}
 }
 @media (max-width:380px){

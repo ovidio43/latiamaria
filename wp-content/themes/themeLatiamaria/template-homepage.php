@@ -15,9 +15,15 @@ get_header();
     </div>
     <div class="container">
 
-    <?php query_posts('post_type=videos'); ?>
+    <?php 
+$args = array(
+'post_type'      => 'videos',
+'posts_per_page' => 5
+);
+    query_posts($args); ?>
     <?php if (have_posts()) : ?>
         <div class="wrap-video">
+        <h1 style="text-align:center;">Videos recientes</h1>
         <?php while (have_posts()) : the_post(); ?>
             <div class="item-video">
                 <div class="item">
@@ -27,11 +33,13 @@ get_header();
                 </div>
             </div>
         <?php endwhile;  wp_reset_query(); ?>
+        <div class="paging-navigation"><span class="nav-previous"><a href="/videos/page/2/">Ver más Vidéos</a></span> </div>
     <?php endif; ?>                                     
       </div>
       <div class="wrap-products">
       <?php if ( is_active_sidebar( 'main_sidebar' ) ) : ?>
           <?php dynamic_sidebar( 'main_sidebar' ); ?>
+          <div class="paging-navigation"><span class="nav-previous"><a href="/shop/">Ver más Productos</a></span> </div>
       <?php endif; ?>
       </div>
     </div>
